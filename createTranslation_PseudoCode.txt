@@ -1,0 +1,17 @@
+Takes in string type song and sets string type translation to it
+Interger translationLength keeps track of how long the translation should be
+Repeatedly:
+	check if char in song[c] is one of the colors
+		check what color song[c] is and assign the char of that color to the variable "color"
+		if the color has a digit after it, change var color to be uppercased
+			check for second digit
+			digit amount assigned to numBeat
+			assign the uppercase color char to translate numBeat amount of times
+			increase translationLength by numBeat
+			increase c by numBeat + 1
+		if the color has no digit after it, assign song[c] to the char color and
+			increase both transLength and c by 1
+	if char in song[c] is not color, set translate[c] equal to x (a pause)
+	increase c by 1
+Erase all /'s that remained in translation
+Return translation 
